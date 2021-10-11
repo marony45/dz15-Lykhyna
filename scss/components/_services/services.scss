@@ -1,0 +1,45 @@
+.services {
+  &__wrapper {
+    padding-top: 110px;
+  }
+  &__content {
+    justify-content: space-between;
+    border-bottom: 2px solid $topbgcolor;
+    padding-bottom: 80px;
+  }
+  &__block1 {
+    width: 40%;
+    h2 {
+      @extend %title;
+    }
+    p {
+      margin: 50px 0 0;
+    }
+    a {
+      @extend %h100w45;
+      @extend %contentcenter;
+      border: 2px solid $red;
+      color: $red;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+  }
+  &__btn {
+    height: 56px;
+    align-content: center;
+    margin-top: 60px;
+  }
+  &__block2 {
+    flex-wrap: wrap;
+    width: 50%;
+    &__subitem {
+      width: 50%;
+      padding:10px 20px 30px;
+      &__logo {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

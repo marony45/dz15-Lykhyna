@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+
+  }
+  
+.container {
+    max-width: $containerwidth;
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin: 0;
+}
+
+.dflex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+body  {
+    font-family: 'Open Sans', sans-serif;
+}

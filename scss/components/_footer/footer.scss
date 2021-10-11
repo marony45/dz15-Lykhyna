@@ -1,0 +1,26 @@
+footer {
+  margin-top: 100px;
+}
+
+.footer {
+  &__wrapper {
+    height: 110px;
+    background-color: $dark;
+    .container {
+      display: flex;
+      @extend %footercontent;
+      justify-content: space-between;
+    }
+  }
+  &__text {
+    @extend %footercontent;
+    color: $white;
+  }
+  &__logos {
+    justify-content: end;
+    @extend %footercontent;
+  }
+  &__logo {
+    padding: 0 10px;
+  }
+}

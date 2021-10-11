@@ -1,0 +1,32 @@
+.header__wrapper {
+  background-color: $topbgcolor;
+}
+
+header {
+  nav {
+    padding-top: 30px;
+    ul {
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      background-color: $dark;
+      justify-content: center;
+      li {
+        @extend %headerli;
+        &:hover {
+          @extend %headerli;
+          display: flex;
+          background-color: $red;
+          transition: 1s;
+        }
+        a {
+          color: $white;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

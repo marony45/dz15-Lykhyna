@@ -1,0 +1,41 @@
+.newsletter {
+    &__wrapper {
+        background-color: $mainyellow;
+        padding: 140px 0;
+    }
+    &__title {
+        @extend %newsletterfont;
+        font-size: 48px;
+    }
+    &__text {
+        @extend %newsletterfont;
+        padding: 35px 0 60px;
+    }
+    &__item1 {
+        justify-content: center;
+    }
+    &__input {
+        @extend %bordernone5px;
+        @extend %wh100;
+        &__wrapper {
+            height: 80px;
+            width: 45%;
+            padding-right: 25px;
+        }
+        &::-webkit-input-placeholder {
+            color: $dark;
+            transform: translateX(25px);
+            text-align: left;
+            font-size: 20px;
+        }
+        &:focus::-webkit-input-placeholder {
+            color: transparent;
+            border: none;
+        }
+    }
+    &__btn {
+        @extend %bordernone5px;
+        width: 17%;
+        @extend %redbutton;
+    }
+}

@@ -1,0 +1,49 @@
+.organisation {
+  &__wrapper {
+    background-color: $topbgcolor;
+  }
+  &__content {
+    padding: 100px 0 110px;
+    justify-content: space-between;
+    div {
+      .organisation__btn {
+        height: 56px;
+        align-content: center;
+        margin-top: 60px;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: 59px;
+        margin: 0;
+        letter-spacing: 6px;
+        word-spacing: -7px;
+        line-height: 70px;
+      }
+      p {
+        width: 75%;
+        margin: 0;
+        margin-top: 40px;
+        padding: 0;
+      }
+      a  {
+        width: 45%;
+        @extend %contentcenter;
+        border: 1px solid transparent;
+        @extend %redbutton;
+        letter-spacing: 2px;
+        border-radius: 5px;
+      }
+    }
+  }
+  &__block1 {
+    width: 45%;
+  }
+  &__block2 {
+    box-shadow: $boxshadow;
+    width: 45%;
+    iframe {
+      width: 100%;
+      border: 0;
+    }
+  }
+}

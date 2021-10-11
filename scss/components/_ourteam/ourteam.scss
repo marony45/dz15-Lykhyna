@@ -1,0 +1,91 @@
+.ourteam {
+    &__wrapper {
+        padding: 120px 0 110px 0;
+    }
+    &__title {
+        @extend %title;
+        position: relative;
+        left: -10px;
+        margin-bottom: 40px;
+    }
+    &__text {
+        width: 450px;
+        margin: 0;
+        &::after {
+            @include redcross(0);
+        }
+    }
+    &__subitem__childhover {
+        color: transparent;
+    }
+    &__item {
+        @extend %marjust;
+        &1 {
+            height: 460px;
+            width: 25%;
+            background-color: $mainyellow;
+        }
+        &2 {
+            width: 70%;
+            align-items: flex-end;
+            &__subitem1 {
+                &__title{
+                    text-transform: uppercase;
+                    font-size: 26px;
+                    margin: 0;
+                }
+                &__text{
+                    width: 75%;
+                    margin: 35px 0 45px;
+                }
+                &__links {
+                    margin-bottom: 44px;
+                }
+                &__link {
+                    padding-right: 30px;
+                    a {
+                        font-style: oblique;
+                        color: $dark;
+                    }
+                }
+            }
+            &__subitem2 {
+                height: 215px;
+                div {
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+                &__child {
+                    height: 100%;
+                    background-color: $mainyellow;
+                    position: relative;
+                    &__wrapper {
+                        width: 100%;
+                        padding: 0 10px;
+                    }
+                    &:hover .ourteam__subitem__childhover{
+                        height: 15%;
+                        background-color: $grey;
+                        color:$white;
+                        text-align: center;
+                        text-transform: uppercase;
+                        display: flex;
+                        @extend %contentcenter;
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

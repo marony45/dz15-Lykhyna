@@ -1,0 +1,9 @@
+@mixin productsahover($color) {
+  color: ($color);
+  @extend %productsahover;
+}
+
+@mixin redcross ($margin) {
+  margin: ($margin);
+  @extend %redcross;
+}

@@ -1,0 +1,94 @@
+@media (max-width: 1000px) {
+  .intouch {
+    &__wrapper {
+      .container {
+        max-width: 950px;
+      }
+    }
+    &__text {
+      width: 50%;
+    }
+    &__item1__wrapper {
+      margin: 0 50px 0 0;
+    }
+    }
+}
+
+@media (max-width: 992px) {
+  .intouch {
+    &__wrapper {
+      .container {
+        max-width: 950px;
+      }
+    }
+    &__text {
+      width: 50%;
+    }
+    &__item1__wrapper {
+      margin: 0 50px 0 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .intouch {
+    &__wrapper {
+      .container {
+        max-width: 740px;
+      }
+    }
+    &__text {
+      width: 100%;
+    }
+    &__content {
+      flex-direction: column;
+    }
+    &__item1__wrapper {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    &__contactus__wrapper {
+      padding: 80px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .intouch {
+    &__wrapper {
+      .container {
+        max-width: 100%;
+      }
+    }
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__item1__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__input__wrapper {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      label {
+        display:block;
+        width: 100%;
+        height: 50%;
+        margin: 10px 0 10px 0;
+      }
+    }
+
+
+    &__btn__wrapper {
+      width: 100%;
+      button {
+        height: 50px;
+      }
+    }
+  }
+}
