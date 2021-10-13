@@ -173,6 +173,7 @@ header nav ul li:hover, header nav ul li {
 .container {
   max-width: 1250px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .wrapper {
@@ -219,10 +220,10 @@ header nav ul li a {
 }
 
 .organisation__wrapper {
+  padding: 100px 0 110px;
   background-color: #f6f2f2;
 }
 .organisation__content {
-  padding: 100px 0 110px;
   justify-content: space-between;
 }
 .organisation__content div .organisation__btn {
@@ -455,7 +456,7 @@ header nav ul li a {
 .products__text {
   text-align: center;
   margin: 0 auto;
-  width: 510px;
+  max-width: 510px;
   padding-top: 30px;
 }
 .products__text::after {
@@ -590,12 +591,10 @@ header nav ul li a {
   padding: 120px 0 110px 0;
 }
 .ourteam__title {
-  position: relative;
-  left: -10px;
   margin-bottom: 40px;
 }
 .ourteam__text {
-  width: 450px;
+  max-width: 450px;
   margin: 0;
 }
 .ourteam__text::after {
@@ -619,7 +618,7 @@ header nav ul li a {
   margin: 0;
 }
 .ourteam__item2__subitem1__text {
-  width: 75%;
+  max-width: 75%;
   margin: 35px 0 45px;
 }
 .ourteam__item2__subitem1__links {
@@ -868,18 +867,20 @@ header nav ul li a {
 .intouch__wrapper {
   padding-top: 100px;
 }
+.intouch__content {
+  margin-top: 55px;
+}
 .intouch__item1__wrapper {
   width: 60%;
   margin: 0 100px 0 0;
 }
 .intouch__text {
-  width: 60%;
+  max-width: 60%;
   margin: 50px 0 0;
 }
 .intouch__text::after {
   margin: 0;
   padding-top: 55px;
-  margin-bottom: 55px;
 }
 .intouch__contactus__wrapper {
   display: flex;

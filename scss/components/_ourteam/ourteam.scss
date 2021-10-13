@@ -4,12 +4,10 @@
     }
     &__title {
         @extend %title;
-        position: relative;
-        left: -10px;
         margin-bottom: 40px;
     }
     &__text {
-        width: 450px;
+        max-width: 450px;
         margin: 0;
         &::after {
             @include redcross(0);
@@ -35,7 +33,7 @@
                     margin: 0;
                 }
                 &__text{
-                    width: 75%;
+                    max-width: 75%;
                     margin: 35px 0 45px;
                 }
                 &__links {

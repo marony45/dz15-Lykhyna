@@ -9,7 +9,7 @@
   &__text {
     text-align: center;
     margin: 0 auto;
-    width: 510px;
+    max-width: 510px;
     padding-top: 30px;
     &::after {
       @include redcross(0 auto);

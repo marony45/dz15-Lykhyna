@@ -1,9 +1,10 @@
 .organisation {
   &__wrapper {
+    padding: 100px 0 110px;
     background-color: $topbgcolor;
   }
   &__content {
-    padding: 100px 0 110px;
+
     justify-content: space-between;
     div {
       .organisation__btn {

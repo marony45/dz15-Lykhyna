@@ -2,7 +2,9 @@
     &__wrapper {
         padding-top: 100px;
     }
-
+    &__content {
+        margin-top: 55px;
+    }
     &__item1__wrapper {
         width: 60%;
         margin: 0 100px 0 0;
@@ -11,12 +13,11 @@
        @extend %title;
     }
     &__text {
-        width: 60%;
+        max-width: 60%;
         margin:50px 0 0;
         &::after {
             @include redcross(0);
             padding-top: 55px;
-            margin-bottom: 55px;
         }
     }
     &__contactus__wrapper {
