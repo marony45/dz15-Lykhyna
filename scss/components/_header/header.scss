@@ -6,11 +6,9 @@ header {
   nav {
     padding-top: 30px;
     ul {
-      margin: 0 auto;
+      @extend %ul;
       padding: 0;
-      list-style: none;
       background-color: $dark;
-      justify-content: center;
       li {
         @extend %headerli;
         &:hover {

@@ -27,12 +27,8 @@
         padding: 0;
       }
       a  {
-        width: 45%;
-        @extend %contentcenter;
-        border: 1px solid transparent;
-        @extend %redbutton;
-        letter-spacing: 2px;
-        border-radius: 5px;
+        @include btn($red, $white, transparent, 10px 0, 45%, 2px, 56px);
+        @extend %button;
       }
     }
   }

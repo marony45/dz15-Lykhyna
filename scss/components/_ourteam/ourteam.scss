@@ -7,10 +7,9 @@
         margin-bottom: 40px;
     }
     &__text {
-        max-width: 450px;
-        margin: 0;
+        @include titletext(left, 0, 450px, 0 0 0 0);
         &::after {
-            @include redcross(0);
+            @include redcross(0, 55px 0 0 0);
         }
     }
     &__subitem__childhover {

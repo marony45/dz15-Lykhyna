@@ -34,8 +34,7 @@
         }
     }
     &__btn {
-        @extend %bordernone5px;
-        width: 17%;
-        @extend %redbutton;
+        @include btn($red, $white, transparent, 10px 0, 17%, 0, 80px);
+        @extend %button;
     }
 }

@@ -3,7 +3,27 @@
   @extend %productsahover;
 }
 
-@mixin redcross ($margin) {
+@mixin redcross($margin, $pdng) {
   margin: ($margin);
+  padding: ($pdng);
   @extend %redcross;
+}
+
+@mixin titletext($ta, $m, $mw, $pdng) {
+  text-align: $ta;
+  margin: $m;
+  max-width: $mw;
+  padding: $pdng;
+}
+
+@mixin btn($bgc, $clr, $bordclr, $pdng, $wdth, $ltsp, $h) {
+  background-color: $bgc;
+  color: $clr;
+  border-color: $bordclr;
+  padding: $pdng;
+  width: $wdth;
+  letter-spacing: $ltsp;
+  height: $h;
+  @extend %button;
+  @extend %contentcenter;
 }

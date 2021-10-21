@@ -1,6 +1,6 @@
 .services {
   &__wrapper {
-    padding-top: 110px;
+    @extend %pt110px;
   }
   &__content {
     justify-content: space-between;
@@ -16,14 +16,8 @@
       margin: 50px 0 0;
     }
     a {
-      @extend %h100w45;
-      @extend %contentcenter;
-      border: 2px solid $red;
-      color: $red;
-      font-weight: bold;
-      letter-spacing: 2px;
-      font-size: 18px;
-      border-radius: 5px;
+      @include btn($white, $red, $red, 10px 0, 45%, 2px, 56px);
+      @extend %button;
     }
   }
   &__btn {

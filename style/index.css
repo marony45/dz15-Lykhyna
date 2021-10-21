@@ -83,13 +83,23 @@ header nav ul li:hover, header nav ul li {
   padding: 0 22px;
 }
 
+.products__wrapper, .services__wrapper {
+  padding-top: 110px;
+}
+
+.products__menu ul, header nav ul {
+  margin: 0 auto;
+  justify-content: center;
+  list-style: none;
+}
+
 .newsletter__text, .newsletter__title {
   color: white;
   margin: 0 auto;
   text-align: center;
 }
 
-.intouch__btn, .intouch__textarea, .newsletter__btn, .newsletter__input, .intouch__input__email, .intouch__input__name {
+.intouch__textarea, .newsletter__input, .intouch__input__email, .intouch__input__name {
   border-radius: 5px;
   border: none;
 }
@@ -111,18 +121,18 @@ header nav ul li:hover, header nav ul li {
   content: "";
   width: 130px;
   border-bottom: 2px solid #ff3f40;
-  padding-top: 30px;
 }
 
-.intouch__btn, .newsletter__btn, .organisation__content div a {
+.intouch__btn, .newsletter__btn, .services__block1 a, .organisation__content div a {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: bold;
-  color: white;
-  background-color: #ff3f40;
+  border: 2px solid;
+  border-radius: 5px;
+  display: flex;
 }
 
-.ourteam__item2__subitem2__child:hover .ourteam__subitem__childhover, .services__block1 a, .organisation__content div a {
+.intouch__btn, .newsletter__btn, .ourteam__item2__subitem2__child:hover .ourteam__subitem__childhover, .services__block1 a, .organisation__content div a {
   justify-content: center;
   align-items: center;
 }
@@ -144,11 +154,6 @@ header nav ul li:hover, header nav ul li {
 }
 .intouch__input__email:focus::placeholder, .intouch__input__name:focus::placeholder {
   color: transparent;
-}
-
-.services__block1 a {
-  height: 100%;
-  width: 45%;
 }
 
 .intouch__contactus__wrapper .email, .intouch__contactus__wrapper .address {
@@ -200,11 +205,8 @@ header nav {
   padding-top: 30px;
 }
 header nav ul {
-  margin: 0 auto;
   padding: 0;
-  list-style: none;
   background-color: #313030;
-  justify-content: center;
 }
 header nav ul li:hover {
   display: flex;
@@ -246,10 +248,13 @@ header nav ul li a {
   padding: 0;
 }
 .organisation__content div a {
+  background-color: #ff3f40;
+  color: white;
+  border-color: transparent;
+  padding: 10px 0;
   width: 45%;
-  border: 1px solid transparent;
   letter-spacing: 2px;
-  border-radius: 5px;
+  height: 56px;
 }
 .organisation__block1 {
   width: 45%;
@@ -332,9 +337,6 @@ header nav ul li a {
     height: 250px;
   }
 }
-.services__wrapper {
-  padding-top: 110px;
-}
 .services__content {
   justify-content: space-between;
   border-bottom: 2px solid #f6f2f2;
@@ -347,12 +349,13 @@ header nav ul li a {
   margin: 50px 0 0;
 }
 .services__block1 a {
-  border: 2px solid #ff3f40;
+  background-color: white;
   color: #ff3f40;
-  font-weight: bold;
+  border-color: #ff3f40;
+  padding: 10px 0;
+  width: 45%;
   letter-spacing: 2px;
-  font-size: 18px;
-  border-radius: 5px;
+  height: 56px;
 }
 .services__btn {
   height: 56px;
@@ -447,9 +450,6 @@ header nav ul li a {
     text-align: center;
   }
 }
-.products__wrapper {
-  padding-top: 110px;
-}
 .products__title {
   text-align: center;
 }
@@ -457,18 +457,14 @@ header nav ul li a {
   text-align: center;
   margin: 0 auto;
   max-width: 510px;
-  padding-top: 30px;
+  padding: 30px 0 0 0;
 }
 .products__text::after {
   margin: 0 auto;
+  padding: 55px 0 0 0;
 }
 .products__menu {
   padding: 80px 0 65px;
-}
-.products__menu ul {
-  margin: 0 auto;
-  list-style: none;
-  justify-content: center;
 }
 .products__menu ul li {
   padding: 0 30px;
@@ -594,11 +590,14 @@ header nav ul li a {
   margin-bottom: 40px;
 }
 .ourteam__text {
-  max-width: 450px;
+  text-align: left;
   margin: 0;
+  max-width: 450px;
+  padding: 0 0 0 0;
 }
 .ourteam__text::after {
   margin: 0;
+  padding: 55px 0 0 0;
 }
 .ourteam__subitem__childhover {
   color: transparent;
@@ -812,7 +811,13 @@ header nav ul li a {
   border: none;
 }
 .newsletter__btn {
+  background-color: #ff3f40;
+  color: white;
+  border-color: transparent;
+  padding: 10px 0;
   width: 17%;
+  letter-spacing: 0;
+  height: 80px;
 }
 
 @media (max-width: 1000px) {
@@ -875,12 +880,14 @@ header nav ul li a {
   margin: 0 100px 0 0;
 }
 .intouch__text {
-  max-width: 60%;
+  text-align: left;
   margin: 50px 0 0;
+  max-width: 60%;
+  padding: 0 0 0 0;
 }
 .intouch__text::after {
   margin: 0;
-  padding-top: 55px;
+  padding: 55px 0 0;
 }
 .intouch__contactus__wrapper {
   display: flex;
@@ -930,8 +937,13 @@ header nav ul li a {
   color: transparent;
 }
 .intouch__btn {
-  height: 85px;
+  background-color: #ff3f40;
+  color: white;
+  border-color: transparent;
+  padding: 10px 0;
   width: 100%;
+  letter-spacing: 0;
+  height: 80px;
 }
 .intouch__contactus__wrapper .address {
   width: 280px;
