@@ -73,11 +73,8 @@
   font-size: 20px;
 }
 
-%intouchinput {
-  height: 100%;
-  width: 100%;
+%input {
   @extend %bordernone5px;
-  background-color: $grey;
   &::placeholder {
     font-size: 18px;
     transform: translateX(25px);

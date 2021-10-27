@@ -330,9 +330,16 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt ut incidunt.
                     </p>
                     <form class="newsletter__item1 dflex">
-                        <label class="newsletter__input__wrapper">
-                            <input class="newsletter__input" type="email" placeholder="Email Adress...">
+                        <label for="email_input">
+
                         </label>
+                        <input
+                                id="email_input"
+                                class="newsletter__input"
+                                type="email"
+                                placeholder="Email Adress..."
+                                name="email_adress"
+                        >
                         <button class="newsletter__btn" type="submit">
                             Subscribe
                         </button>
@@ -351,12 +358,23 @@
                 <div class="intouch__content dflex">
                     <form class="intouch__item1__wrapper">
                         <div class="intouch__input__wrapper dflex">
-                            <label>
-                                <input type="text" name="name" class="intouch__input__name" placeholder="Name">
-                            </label>
-                            <label>
-                                <input type="email" name="email" class="intouch__input__email" placeholder="Email">
-                            </label>
+                            <label for="intouch_name"></label>
+                            <input
+                                    id="intouch_name"
+                                    type="text"
+                                    name="name"
+                                    class="intouch__input__name"
+                                    placeholder="Name"
+                            >
+
+                            <label for="intouch_email" class="intouch__input__space"></label>
+                            <input
+                                    id="intouch_email"
+                                    type="email"
+                                    name="email"
+                                    class="intouch__input__email"
+                                    placeholder="Email"
+                            >
                         </div>
                         <div class="intouch__textarea__wrapper">
                             <label>

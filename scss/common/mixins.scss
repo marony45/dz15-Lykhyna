@@ -16,6 +16,12 @@
   padding: $pdng;
 }
 
+@mixin input($bgcolor, $width) {
+  background-color: $bgcolor;
+  width: $width;
+  @extend %input;
+}
+
 @mixin btn($pdng, $wdth, $ltsp, $h) {
   padding: $pdng;
   width: $wdth;

@@ -42,15 +42,16 @@
             height: 70px;
             margin-bottom: 45px;
             justify-content: space-between;
-            label {
-                width: 47%;
-            }
+
         }
         &__name {
-            @extend %intouchinput;
+            @include input($grey, 50%);
+        }
+        &__space {
+            width: 25px;
         }
         &__email {
-            @extend %intouchinput;
+            @include input($grey, 50%);
         }
     }
     &__textarea {

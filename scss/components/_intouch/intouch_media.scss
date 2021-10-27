@@ -57,18 +57,27 @@
       flex-wrap: wrap;
     }
 
-    &__input__wrapper {
-      height: auto;
-      display: flex;
-      width: 100%;
-      flex-wrap: wrap;
-      margin-bottom: 10px;
-      label {
+    &__input{
+      &__wrapper {
+        height: auto;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+
+      }
+      &__name {
+        height: 70px;
+        width: 100%;
+        margin: 10px 0 10px 0;
+      }
+      &__email {
         height: 70px;
         width: 100%;
         margin: 10px 0 10px 0;
       }
     }
+
     &__textarea__wrapper {
       margin-bottom: 20px;
     }
