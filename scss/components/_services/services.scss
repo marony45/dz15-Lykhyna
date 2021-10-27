@@ -16,7 +16,7 @@
       margin: 50px 0 0;
     }
     a {
-      @include btn($white, $red, $red, 10px 0, 45%, 2px, 56px);
+      @include btn(10px 0, 45%, 2px, 56px);
       @extend %button;
     }
   }

@@ -1,8 +1,43 @@
-@media (max-width: 1000px) {
+@media (max-width: $containerwidth) {
   .organisation {
     &__wrapper {
-      .container {
-        max-width: 950px;
+      .organisation {
+        div {
+
+        }
+        &__content {
+          flex-direction: column;
+          padding-bottom: 50px;
+        }
+        &__block1 {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 40px;
+          .organisation__title {
+            font-size: 43px;
+          }
+          p {
+            width: 100%;
+          }
+        }
+        &__btn {
+          width: 100%;
+          justify-content: center;
+        }
+        &__block2 {
+          height: 600px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: $breakpointLg) {
+  .organisation {
+    &__wrapper {
+
         .organisation {
           &__content {
             flex-direction: column;
@@ -28,46 +63,11 @@
       }
     }
   }
-}
 
-@media (max-width: 992px) {
+
+@media (max-width: $breakpointMd) {
   .organisation {
     &__wrapper {
-      .container {
-        max-width: 950px;
-        .organisation {
-          &__content {
-            flex-direction: column;
-            padding-bottom: 50px;
-          }
-          &__block1 {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 40px;
-            p {
-              width: 100%;
-            }
-          }
-          &__btn {
-            width: 100%;
-            justify-content: center;
-          }
-          &__block2 {
-            height: 600px;
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .organisation {
-    &__wrapper {
-      .container {
-        max-width: 740px;
-
         .organisation {
           &__block2 {
             height: 400px;
@@ -76,7 +76,7 @@
       }
     }
   }
-}
+
 
 @media (max-width: 500px) {
   .organisation {
@@ -86,8 +86,14 @@
         .organisation {
           &__block1 {
             h1 {
-              font-size: 40px;
+              font-size: 30px;
+              letter-spacing: normal;
             }
+          }
+          &__btn {
+           a {
+             font-size: 11px;
+           }
           }
           &__block2 {
             height: 250px;

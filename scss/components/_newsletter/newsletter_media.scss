@@ -1,36 +1,24 @@
-@media (max-width: 1000px) {
+@media (max-width: $breakpointXLg) {
   .newsletter {
-    &__wrapper {
-      .container {
-        max-width: 950px;
-      }
-    }
   &__input__wrapper {
     height: 60px;
   }
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: $breakpointLg) {
   .newsletter {
-    &__wrapper {
-      .container {
-        max-width: 950px;
-      }
-    }
     &__input__wrapper {
       height: 60px;
+    }
+    &__btn {
+      height: auto;
     }
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpointMd) {
   .newsletter {
-    &__wrapper {
-      .container {
-        max-width: 740px;
-      }
-    }
     &__item1 {
       flex-direction: column;
       align-items: center;
@@ -48,22 +36,18 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: $breakpointXs) {
   .newsletter {
-    &__wrapper {
-      .container {
-        max-width: 100%;
-      }
-    }
     &__title {
       font-size: 25px;
     }
     &__item1 {
-      div {
-        height: 40px;
+      .newsletter__input__wrapper {
+        width: 100%;
       }
       button {
-        height: 40px;
+        height: 60px;
+        width: 100%;
       }
     }
   }

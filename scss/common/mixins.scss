@@ -16,10 +16,7 @@
   padding: $pdng;
 }
 
-@mixin btn($bgc, $clr, $bordclr, $pdng, $wdth, $ltsp, $h) {
-  background-color: $bgc;
-  color: $clr;
-  border-color: $bordclr;
+@mixin btn($pdng, $wdth, $ltsp, $h) {
   padding: $pdng;
   width: $wdth;
   letter-spacing: $ltsp;

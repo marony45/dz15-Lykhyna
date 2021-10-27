@@ -1,41 +1,27 @@
-@media (max-width: 1000px) {
+@media (max-width: $containerwidth) {
   .products {
-    &__wrapper {
-      .container {
-        max-width: 950px;
-      }
+    &__subitems {
+      height: 500px;
     }
+  }
+}
+
+@media (max-width: $breakpointXLg) {
+  .products {
     &__subitems {
       height: 475px;
     }
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: $breakpointLg) {
   .products {
-    &__wrapper {
-      .container {
-        max-width: 950px;
-      }
-    }
-    &__subitems {
-      height: 475px;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .products {
-    &__wrapper {
-      .container {
-        max-width: 740px;
-      }
-    }
     &__menu {
       ul {
         li {
+          padding: 0 5px;
           a {
-            font-size: 14px;
+            font-size: 12px;
           }
         }
       }
@@ -71,13 +57,24 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: $breakpointMd) {
   .products {
-    &__wrapper {
-      .container {
-        max-width: 100%;
-      }
+    &__subitems {
+      height: 1000px;
     }
+  }
+}
+
+@media (max-width: $breakpointSm) {
+  .products {
+    &__subitems {
+      height: 900px;
+    }
+  }
+}
+
+@media (max-width: $breakpointXs) {
+  .products {
     &__menu {
       padding: 40px 0 30px;
       ul {
@@ -90,6 +87,7 @@
       }
     }
     &__subitems {
+      height: 1200px;
       justify-content: center;
       div {
         &:first-child {

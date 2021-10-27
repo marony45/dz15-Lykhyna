@@ -51,6 +51,15 @@
   border: 2px solid;
   border-radius: 5px;
   display: flex;
+  background-color: $red;
+  color: $white;
+  border-color: transparent;
+  &:hover {
+    transition: .5s;
+    background-color: transparent;
+    color: $red;
+    border-color: $red;
+  }
 }
 
 %contentcenter {

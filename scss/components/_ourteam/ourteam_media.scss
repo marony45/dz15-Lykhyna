@@ -1,10 +1,18 @@
-@media (max-width: 1000px) {
+@media (max-width: $containerwidth) {
   .ourteam {
-    &__wrapper {
-      .container {
-        max-width: 950px;
+    &__item1 {
+      height: 415px;
+    }
+    &__item2 {
+      &__subitem2 {
+        height: 156px;
       }
     }
+  }
+}
+
+@media (max-width: $breakpointXLg) {
+  .ourteam {
     &__item1 {
       width: 45%;
       height: auto;
@@ -37,49 +45,21 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: $breakpointLg) {
   .ourteam {
-    &__wrapper {
-      .container {
-        max-width: 950px;
-      }
+    &__title {
+      text-align: center;
     }
-    &__item1 {
-      width: 45%;
-      height: auto;
-      margin-bottom: 10px;
-    }
-    &__item2 {
-      width: 50%;
-      &__subitem2 {
-        div {
-          &:first-child {
-            padding-left: 10px;
-          }
-          &:last-child {
-            padding-right: 10px;
-          }
-        }
-        height: 450px;
-        flex-wrap: wrap;
-        &__child__wrapper {
-          width: 50%;
-          padding: 10px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  .ourteam {
-    &__wrapper {
-      .container {
-        max-width: 740px;
+    &__text {
+      max-width: 100%;
+      text-align: center;
+      &::after {
+        margin: 0 auto;
       }
     }
     &__item {
       flex-direction: column;
+      align-items: center;
       &1 {
         width: 45%;
         height: 450px;
@@ -92,7 +72,7 @@
             text-align: center;
           }
           &__text {
-            width: 100%;
+            max-width: 100%;
             text-align: center;
           }
           &__links {
@@ -121,33 +101,50 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: $breakpointMd) {
   .ourteam {
-    &__wrapper {
-      .container {
-        max-width: 100%;
+    &__item {
+      &1 {
+        height: 350px;
       }
-    }
-    &__content {
-      h3 {
-      text-align: center;
-      }
-      p{
-        text-align: center;
-        &::after {
-          display: flex;
-          justify-content: center;
+      &2 {
+        &__subitem2 {
+          height: 550px;
         }
       }
     }
+  }
+}
+
+@media (max-width: $breakpointSm) {
+  .ourteam {
     &__item {
-      align-items: center;
-      &1{
-        height: 325px;
+      &1 {
+        height: 300px;
       }
-      &2{
+      &2 {
         &__subitem2 {
           height: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpointXs) {
+  .ourteam {
+    &__item {
+      &2 {
+        &__subitem2 {
+          flex-direction: column;
+          height: 500px;
+          align-items: center;
+          &__child {
+            &__wrapper {
+              width: 35%;
+              height: 25%;
+            }
+          }
         }
       }
     }

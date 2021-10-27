@@ -75,7 +75,7 @@
         }
     }
     &__btn {
-        @include btn($red, $white, transparent, 10px 0, 100%, 0, 80px);
+        @include btn(10px 0, 100%, 0, 80px);
         @extend %button;
     }
     &__contactus {
